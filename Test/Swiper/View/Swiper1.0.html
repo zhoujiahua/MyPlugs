@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模版页面</title>
+    <link rel="stylesheet" href="../Themes/Plugs/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Themes/Plugs/FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../Themes/Plugs/Swiper/css/swiper.css">
+    <link rel="stylesheet" href="../Themes/CSS/Base.css">
+    <style>
+        .slide-list-A .swiper-wrapper {
+            /* 改变时间曲线 http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=13 */
+            /* transition-timing-function: ease;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: linear;
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            transition-timing-function: step-start;
+            transition-timing-function: step-end;
+            transition-timing-function: steps(4, end);
+            transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            transition-timing-function: inherit; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <h1 class="page-header">Swiper轮播特效</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <!-- 单个轮播 -->
+            <div class="container">
+                <div class="row">
+                    <div class="swiper-container slide-list-A">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Carousel/lb01.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Carousel/lb02.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Carousel/lb03.jpg" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Carousel/lb04.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 多个滚动 -->
+            <div class="container">
+                <div class="row">
+                    <div class="slide-list-B">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Book/book1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Book/book2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Book/book3.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Book/book4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Book/book5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="../Themes/Images/index/Book/book6.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../Themes/JS/JQuery/jquery.min1.9.1.js"></script>
+    <script src="../Themes/Plugs/Bootstrap/js/bootstrap.js"></script>
+    <script src="../Themes/Plugs/Swiper/js/swiper.js"></script>
+    <script>
+        var oASwiper = new Swiper(".slide-list-A", {
+            // autoplay: true, //自动轮播
+            initialSlide: 3, //初始轮播索引
+            speen: 300,
+
+            //切换速度，即slider自动滑动开始到结束的时间（单位ms），也是触摸滑动时释放至贴合的时间。
+            autoplay: {
+                delay: 3000,
+            },
+
+            //幻灯片滑动方向 默认为：横向 horizontal：横向切换 vertical：竖向切换
+            direction: "horizontal",
+
+            //设置为true时，鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。（根据浏览器形状有所不同）
+            grabCursor: true,
+
+            autoHeight: true, //高度随内容变化
+
+            //上下页
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            //分页器
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            uniqueNavElements: false,
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>
