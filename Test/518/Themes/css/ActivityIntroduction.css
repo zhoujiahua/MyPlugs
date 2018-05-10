@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*活动介绍页面样式*/
+.content{
+	padding:40px 0 80px;
+}
+.back-homepage{
+	padding-bottom: 36px;
+}
+.back-homepage-c{
+	border-bottom: 1px solid #DBDBDB;
+}
+.back-homepage a, .back-homepage b {
+	font: 600 13px/45px "";
+}
+.detail-c{
+	padding: 0 72px;
+}
+
+.menu-ul li:hover{
+	background-color: #fff;
+	color: #A01111;
+}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*头部样式*/
+/*header banner*/
+.banner{
+	background: url(../images/banner2.png) no-repeat center top;
+	min-height: 414px;
+	padding-top: 28px;
+}
+.logo h1{
+	background: url(../images/logo.png) no-repeat left center;
+	height: 70px;
+}
+.intro{
+	padding-top: 260px;
+	height: 44px;
+	text-align: center;
+}
+.intro-c span{
+	margin-right: 44px;
+	font: 600 16px/44px "";
+	color: #fff;
+	text-shadow: 0 0 5px #A01111,
+	 -0 -0 5px #A01111;
+}
+.intro-c{
+	
+}
+/*menu*/
+.menu{
+	background-color: #A01111;
+}
+.menu-ul li{
+	/*float: left;*/
+	color: #fff;
+}
+.menu-ul li a{
+	display: block;
+	padding: 20px 0;
+	font: 500 16px/26px "";
+	text-align: center;
+	color: inherit;
+}
+
+.menu-ul .mactive{
+	background-color: #fff;
+	color: #A01111;
+}
+

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*二级页面公共字体*/
+.cu-h1{
+	font: 600 20px/50px "";
+	text-align: center;
+}
+.cu-h2{
+	font: 600 16px/35px "";
+}
+.cu-h3{
+	font: 600 15px/30px "";
+}
+.cu-p{
+	font: 500 13px/30px "";
+	text-indent: 2em;
+}
+.cu-b{
+	font-weight: 600;
+}
+.DemoPic{
+	padding: 20px 0;
+	text-align: center;
+}
+.DemoPic img{
+	
+}
