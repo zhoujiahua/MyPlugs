@@ -1,0 +1,113 @@
+﻿@charset "UTF-8";
+/*公共样式*/
+html,body { overflow-x: hidden; }
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family:Arial,Verdana,"Microsoft YaHei","\5b8b\4f53";margin-bottom:0;margin-top:0; }
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0;}
+textarea { resize:none; } 
+img {border:0;	vertical-align:middle; }
+table,table tr th, table tr td { border:1px solid #000; }
+table { border-collapse:collapse; }
+area { outline: 0; }
+
+/* a标签默认样式 */
+body a { text-decoration:none; }
+body a:hover{ text-decoration:none; }
+body a:link{ text-decoration: none; }
+body a:visited{ text-decoration: none; }
+body a:active { text-decoration: none; }
+body a:focus { text-decoration: none;outline: 0 }
+body.disable-hover { pointer-events: none }
+
+h1,h2,h3,h4,h5,h6 { text-decoration:none; font-weight:normal; font-size:100%; }
+s,i,em{ font-style:normal; text-decoration:none; }
+
+/* 底部沉底样式 */
+html, body{ height:100%; }
+.wrapper{ position:relative; min-height:100%; }
+.main{ padding-bottom:170px; }
+
+/* body默认样式设置 */
+body {
+    /*font:13px/150% Arial,Verdana,"\5b8b\4f53","Microsoft YaHei";*/
+    font:12px/150% Arial,
+    Verdana,
+    "Microsoft YaHei",
+    "\5b8b\4f53";
+    /* color:#333333; */
+    /*background:#FFFFFF;*/
+    /*background-color:#fff;*/
+}
+
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both
+}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+
+/* 公共样式提取 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+.ind{
+    text-indent: -9999em;
+}
+
+
+/*复写Bootstrap 没有特殊要求时请谨慎使用*/
+/* .container, .row{
+    padding-right:0 !important;
+    padding-left:0 !important;
+    width:1200px !important;
+}
+.row{
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
+[class*="col-"] {
+    padding:0 !important;
+    margin:0 !important;
+}
+.btn{
+    border-radius:0;
+}
+
+input[type=checkbox], input[type=radio] {
+     margin:0; 
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow:none;
+} */
