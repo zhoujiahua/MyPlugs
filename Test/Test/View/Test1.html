@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="../Themes/Plugs/Swiper/css/swiper.css">
     <link rel="stylesheet" href="../Themes/CSS/Base.css">
     <style>
- .header{
-     height: 100px;
- }
+        .header {
+            height: 100px;
+        }
+
         .auto {
             position: relative;
         }
@@ -30,7 +31,7 @@
             height: 200px;
             width: 300px;
             border: 1px solid #ccc;
-            background-color:pink;
+            background-color: pink;
         }
 
         .auto span {
@@ -85,6 +86,19 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div>
+                    <ul class="ul-index">
+                        <li data-time="">qqqq</li>
+                        <li data-time="">qqqq</li>
+                        <li data-time="">qqqq</li>
+                        <li data-time="">qqqq</li>
+                        <li data-time="">qqqq</li>
+                        <li data-time="">qqqq</li>
+                        <li data-time="">qqqq</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <!-- footer -->
@@ -98,6 +112,15 @@
     <script src="../Themes/Plugs/Bootstrap/js/bootstrap.js"></script>
     <script src="../Themes/Plugs/Swiper/js/swiper.js"></script>
     <script>
+        $(function () {
+            var arr = [101, 102, 103, 104, 105, 106, 108, 109];
+            $.each(arr, function (i, t) {
+                console.log(arr[i]);
+                // debugger
+                $("ul-index li").eq(i).data(arr[i]);
+
+            })
+        })
     </script>
 
 </body>
