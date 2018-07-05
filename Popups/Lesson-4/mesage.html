@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+		<title>登录注册</title>
+		<style type="text/css">
+			.main {
+				min-height: 2000px;
+			}
+			
+			.btn-con {
+				width: 1200px;
+				height: 100px;
+				margin: 0 auto;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="main">
+			<!--登录注册-->
+			<div class="btn-con">
+				<button type="button" id="leave_btn">留言</button>
+				<button type="button" id="reply_btn">回复</button>
+			</div>
+
+			<!--弹窗主体-->
+			<div class="message">
+
+				<!--留言-->
+				<div class="message-leave message-c" id="js_message_leave">
+					<form action="#" method="get">
+						<div class="message-con">
+							<div class="message-header">
+								<h3>我要留言</h3>
+								<h4>LEAVE A MESSAGE</h4>
+								<a href="javascript:;" class="js_close">X</a>
+							</div>
+							<div class="message-content">
+								<ul class="message-box">
+									<li>
+										<span>
+											留言内容：
+										</span>
+										<textarea name="ar"  placeholder="请输详细描述你的留言（200字以内）" ></textarea>
+									</li>
+								</ul>
+							</div>
+							<div class="message-footer">
+								<button type="submit" class="message-btnc">提交</button>
+								<button type="button" class="message-btnc js_close">取消</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!--回复-->
+				<div class="message-reply message-c" id="js_message_reply">
+					<div class="message-con">
+						<div class="message-header">
+							<h3>留言回复</h3>
+							<h4>REPLY TO THE MESSAGE</h4>
+							<a href="javascript:;" class="js_close">X</a>
+						</div>
+						<div class="message-content">
+							<ul class="message-box">
+								<li>
+									<span>
+										回复内容：
+									</span>
+									<textarea name="ar" placeholder="请输入回复内容（200字以内）" ></textarea>
+								</li>
+							</ul>
+						</div>
+						<div class="message-footer">
+							<button type="submit" class="message-btnc">提交</button>
+							<button type="button" class="message-btnc js_close">取消</button>
+						</div>
+					</div>
+				</div>
+
+				<!--背景-->
+				<div class="message-bgc" id="js_bgc"></div>
+
+			</div>
+
+		</div>
+
+		<!--JS-->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/message.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/messge.css" />
+		<title>我要留言</title>
+		<style type="text/css">
+			.main {
+				min-height: 2000px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="main">
+			<!--留言按钮-->
+			<div class="btn-con">
+				<button type="button" id="btn">我要留言</button>
+			</div>
+
+			<!--弹窗主体-->
+			<div class="notebook">
+				<form action="#" method="get">
+					<div id="js_message" class="message">
+						<div class="header">
+							<h3>我要留言</h3>
+							<a href="javascript:;" class="close">X</a>
+						</div>
+						<div class="content">
+							<ul class="content-box">
+								<li><span>主题:</span><input type="text" name="tit" placeholder="请输入标题..." /></li>
+								<li><span>内容:</span><textarea name="con" placeholder="请输入内容..."></textarea></li>
+							</ul>
+						</div>
+						<div class="footer">
+							<button type="submit" class="btn act">提交</button>
+							<button type="button" class="btn close">取消</button>
+						</div>
+					</div>
+				</form>
+
+				<!--背景-->
+				<div class="mask"></div>
+
+			</div>
+			
+		</div>
+
+		<!--JS-->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/messge.js"></script>
+
+	</body>
+
+</html>

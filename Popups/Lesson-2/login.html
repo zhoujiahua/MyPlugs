@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<title>登录注册</title>
+		<style type="text/css">
+			.main {
+				min-height: 2000px;
+			}
+			
+			.btn-con {
+				width: 1200px;
+				height: 100px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--登录注册-->
+			<div class="btn-con">
+				<button type="button" id="login_btn">登录注册</button>
+			</div>
+
+			<!--弹窗主体-->
+			<div class="login">
+				
+				<!--登录-->
+				<div class="login-register login-c">
+					<form action="#" method="get">
+						<div class="login-con">
+							<div class="login-header">
+								<h3>用户登录</h3>
+								<h4>USER LOGIN</h4>
+								<a href="javascript:;" class="close">X</a>
+							</div>
+							<div class="login-content">
+								<ul class="login-box">
+									<li><input type="text" name="user" placeholder="用户名" /></li>
+									<li><input type="password" name="pwd" placeholder="密码" /></li>
+								</ul>
+								<div class="login-link clearfix">
+									<div class="fl link-c">
+										<span>还没有账号？</span>
+										<a href="javascript:;" id="go_register">去注册&gt;&gt;</a>
+									</div>
+									<div class="fr link-c">
+										<a href="javascript:;" id="forget_pwd">忘记密码?</a>
+									</div>
+								</div>
+							</div>
+							<div class="login-footer">
+								<button type="submit" class="login-btn reg-btn">登录</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				<!--注册-->
+				<div class="login-signin login-c">
+					<div  class="login-con">
+						<div class="login-header">
+							<h3>用户注册</h3>
+							<h4>USER REGISTRATION</h4>
+							<a href="javascript:;" class="close">X</a>
+						</div>
+						<div class="login-content">
+							<ul class="login-box">
+								<li><input type="text" name="user" placeholder="用户名" /></li>
+								<li id="email-code"><input type="text" name="email" placeholder="邮箱" /><a href="javascript:;">发送验证码</a></li>
+								<li><input type="text" name="emails" placeholder="邮箱验证码" /></li>
+								<li><input type="text" name="pwd" placeholder="请输入密码" /></li>
+								<li><input type="text" name="pwds" placeholder="请确认密码" /></li>
+								<li id="code-c">
+									<input type="text" name="code" placeholder="验证码" />
+									<span><img src="images/code.jpg"/></span>
+									<a href="javascript:;">看不清？</a>
+								</li>
+							</ul>
+						</div>
+						<div class="login-footer">
+							<button type="submit" class="login-btn sig-btn">注册</button>
+						</div>
+					</div>
+				</div>
+
+				<!--找回密码-->
+				<div class="login-password login-c">
+					<div  class="login-con">
+						<div class="login-header">
+							<h3>找回密码</h3>
+							<h4>RETRIEVE THE PASSWORD</h4>
+							<a href="javascript:;" class="close">X</a>
+						</div>
+						<div class="login-content">
+							<ul class="login-box">
+								<li><input type="text" name="email" placeholder="请输入注册邮箱" /></li>
+							</ul>
+						</div>
+						<div class="login-footer">
+							<button type="submit" class="login-btn pwd-btn">确认</button>
+						</div>
+					</div>
+				</div>
+				
+				<!--背景-->
+				<div class="login-bg"></div>
+
+			</div>
+
+		</div>
+
+		<!--JS-->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/login.js"></script>
+
+	</body>
+
+</html>

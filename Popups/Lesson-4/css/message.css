@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/*登录页面样式*/
+
+
+/*公共样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #d4d4d4;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #d4d4d4;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #d4d4d4;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #d4d4d4;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+	/*IE/7/6*/
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+
+/*框架样式*/
+
+.message-c {
+	width: 688px;
+	border: 1px solid #ccc;
+	background: #fff;
+	position: fixed;
+	z-index: 9999;
+	display: none;
+}
+
+.message-bgc {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	/*position: absolute;*/
+	left: 0px;
+	top: 0px;
+	background: #000;
+	opacity: 0.3;
+	filter: alpha(opacity:30);
+	z-index: 9998;
+	display: none;
+}
+
+.message-box li textarea {
+	border: 1px solid #C9C9C9;
+	width: 502px;
+	height: 298px;
+	resize: none;
+	padding: 6px 0 6px 15px;
+}
+
+
+/*message header*/
+
+.message-header {
+	padding: 28px 0;
+	background: url(../images/top.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.message-header h3,
+.message-header h4 {
+	width: 100%;
+	text-align: center;
+}
+
+.message-header h3 {
+	font-weight: 500;
+	font-size: 22px;
+	color: #868686;
+	margin-bottom: 10px;
+}
+
+.message-header h4 {
+	font-weight: 500;
+	font-size: 16px;
+	color: #c7c7c7;
+}
+
+.message-header a {
+	position: absolute;
+	right: 18px;
+	top: 14px;
+	font-size: 1.2em;
+}
+
+
+/*message content*/
+
+.message-content {
+	width: 100%;
+	text-align: center;
+	padding: 58px 0 50px;
+}
+
+.message-box {
+	display: inline-block;
+}
+
+.message-box li {
+	position: relative;
+}
+
+.message-box li span {
+	position: relative;
+	top: -292px;
+	color: #898989;
+	font: 600 16px/30px "";
+}
+
+
+/*message message-footer*/
+
+.message-footer {
+	height: 86px;
+	text-align: center;
+}
+
+.message-btnc {
+	text-align: center;
+	height: 41px;
+	background-color: #C20009;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+	font: 600 14px/41px "";
+}
+
+.message-btnc:hover {
+	opacity: 0.7;
+	filter: alpha(opacity:70);
+}
+
+.message-btnc {
+	width: 128px;
+}
+
+.message-btnc:last-child {
+	background-color: #c9c9c9;
+}
