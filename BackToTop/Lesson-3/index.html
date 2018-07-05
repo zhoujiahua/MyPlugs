@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>返回顶部</title>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			body{
+				min-height: 1900px;
+			}
+			.w{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.pagers{
+				margin-top: 100px;
+				text-align: center;
+			}
+			.page-list{
+				display: inline-block;
+			}
+			.page-list li{
+				float: left;
+				margin-right: 10px;
+				border: 1px solid #C0C0C0;
+				cursor: pointer;
+				padding: 10px 15px;
+			}
+			.page-list .active, .pageItemActive{
+				background-color: #007BFF;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="new-list w">
+				<ul></ul>
+			</div>
+		</div>
+		<div class="pagers">
+			<ul class="page-list" maxshowpageitem="5" pagelistcount="10" id="page"></ul>
+		</div>
+		
+
+		<div class="suspension">
+			<a class="consult" target="_blank" title="在线客服">
+				<div class="suspension-list" style="display:none;">
+					<div class="suspension-list-content">
+						<ul>
+							<li>
+								<div href="javascript:;" class="service-phone">
+									<span class="info-name">客服热线</span>
+									<span class="info-value">400-888-xxxx</span>
+								</div>
+							</li>
+							<li>
+								<div href="javascript:;" class="service-qq">
+									<span class="info-name">在线客服</span>
+									<span class="info-value">80099xxxx</span>
+								</div>
+							</li>
+							<li class="suspension-list-bottom">
+								<div href="javascript:;" class="service-proposal">
+									<span class="info-name">投诉与建议</span>
+									<span class="info-value">最快10分钟内回应</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</a>
+			<a class="cart" title="关注微信公众账号">
+				<div class="pic">
+					<div class="pic-content"></div>
+				</div>
+			</a>
+
+			<a href="javascript:;" class="back-top" title="返回顶部"></a>
+
+		</div>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/page.js"></script>
+
+		
+		<script type="text/javascript">
+			$(function() {
+				(function() {
+					var oGoTop = $(".back-top");
+					oGoTop.on("click", function() {
+
+						$('html, body').animate({
+							scrollTop: 0
+						}, 600);
+						return false;
+					})
+
+					goTop(oGoTop);
+				
+
+				}());
+
+				/*窗口滚动监听*/
+				function goTop(oTop) {
+					$(window).bind('scroll resize', function() {
+						var scrTop = $(window).scrollTop();
+						if(scrTop <= 400) {
+							oTop.hide();
+						} else {
+							oTop.show();
+						}
+					})
+				}
+
+			})
+		</script>
+
+	</body>
+
+</html>

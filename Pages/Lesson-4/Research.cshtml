@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "科研项目";
+    Layout = "~/Views/Shared/_QinLingIndexLayout.cshtml";
+}
+
+@section css{
+    <link href="~/QinLingThemes/artDialog/dialog.css" rel="stylesheet" />
+    <link href="~/QinLingThemes/css/ql-research.css" rel="stylesheet" />
+    <link href="~/QinLingThemes/css/ql-topbanner.css" rel="stylesheet" />
+}
+
+<div class="ql-content">
+    <div class="ql-top-banner">
+        <div class="ql-top-pic ql-top-research">
+            <div class="ql-top-bannerc  ql-w">
+                <h1 class="ql-int">主板刊物</h1>
+            </div>
+        </div>
+    </div>
+    <!--scientific research project-->
+    <div class="qlResearch">
+        <!--Research Title-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="qlResearch-title">
+                        <h1>科研项目</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Research List-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="qlResearch-nav">
+                        <div class="ResearchNavCon">
+                            <!--院外项目-->
+                            <h2 class="ResearchNavTitle"><i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;院外项目</h2>
+                            <ul class="ResearchNavList">
+                                <li data-id="yuanwaikeyan" class="ResearchNavListActive">科研课题（项目）</li>
+                                <li data-id="yuanwaiqita">其他项目</li>
+                            </ul>
+                            <!--院内项目-->
+                            <h2 class="ResearchNavTitle"><i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;院内项目</h2>
+                            <ul class="ResearchNavList">
+                                <li data-id="yuanneikeyan">资助科研课题</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-10">
+                    <div class="ResearchTab">
+                        <div class="qlResearch-tab Research-tabA qlResearch-tabActive">
+                            <div class="qlResearchCon">
+                                <!--qlResearchConMenu-->
+                                <div class="qlResearchConMenu ResearchConMenuA">
+                                    <ul class="clearfix">
+                                        <li class="ResearchActive" data-id="wenwukaogu">文物考古</li>
+                                        <li data-id="bowuguanxue">博物馆学</li>
+                                        <li data-id="wenwubaohu">文物保护</li>
+                                    </ul>
+                                </div>
+                                <!--ResearchSolid-->
+                                <div class="ResearchSolid"></div>
+
+                                <div class="qlResearchConList">
+                                    <div class="ResearchConListTable ResearchConListTableA TableActive ResearchDataList">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th width="20%">项目名称</th>
+                                                    <th width="20%">完成人</th>
+                                                    <th width="20%">级别</th>
+                                                    <th width="20%">时间</th>
+                                                    <th width="20%">备注</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="qlResearchPage">
+                                    <div class="ResearchPageCon ResearchPageConA ResearchPageActive pager">
+                                        <ul class="ql-page" maxshowpageitem="5" pagelistcount="10" id="page"></ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Scientific research awards-->
+    <div class="Awards">
+        <!--Awards Title-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="qlResearch-title">
+                        <h1>科研奖项</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="AwardsTable">
+                        <div class="AwardsTableIntro">
+                            <p>为贯彻落实习近平总书记和李克强总理对文物工作的重要指示和批示精神，进一步提高全民参与文物保护的意识和行动，中国文物保护基金会与《光明日报》社共同举办首届社会力量参与文物保护论坛。</p>
+                            <p>此次论坛以“更多参与、更好保护”为主题，旨在搭建联系全国文化遗产保护社会组织和志愿者的平台，以进一步动员社会力量，为形成文物保护全民参与，保护成果全民共享的新格局，走出一条符合国情的文物保护利用之路做出积极努力。</p>
+                        </div>
+                        <div class="AwardsTableList">
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        @*<th>序号</th>*@
+                                        <th>时间</th>
+                                        <th>项目名称</th>
+                                        <th>奖次</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <div class="AwardsTableListMore">
+                                <a href="javascript:;" class="more">点击加载更多&nbsp;&nbsp;<i class="fa fa-long-arrow-down"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--JS-->
+@section script{
+    <script src="~/QinLingThemes/artDialog/dialog-plus.js"></script>
+    <script src="~/QinLingThemes/js/page.js"></script>
+    <script src="~/QinLingThemes/js/ql-research.js"></script>
+}
